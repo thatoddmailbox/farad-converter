@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("#num").change(function() {
+	var convert = function() {
 		var inVal = $("#num").val();
 		var faradVal = 0;
 		var inUnits = $("#in-units").val();
@@ -12,7 +12,6 @@ $(document).ready(function() {
 		} else if (inUnits == "p") {
 			faradVal = inVal / 1000000000000;
 		}
-		console.log(faradVal);
 		var output = "";
 			output += faradVal;
 			output += " farad<br />";
@@ -23,5 +22,7 @@ $(document).ready(function() {
 			output += (faradVal * 1000000000000);
 			output += " picoFarad (pF)<br />";
 		$("#result").html(output);
-	});
+	};
+	$("#num").change(convert);
+	$("#in-units").change(convert);
 });
