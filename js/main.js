@@ -13,5 +13,15 @@ $(document).ready(function() {
 			faradVal = inVal / 1000000000000;
 		}
 		console.log(faradVal);
+		var output = "";
+			output += faradVal;
+			output += " farad<br />";
+			output += faradVal;
+			output += " microFarad (uF)<br />";
+			output += faradVal;
+			output += " nanoFarad (nF)<br />";
+			output += faradVal;
+			output += " picoFarad (pF)<br />";
+		$("#result").html(output);
 	});
 });
