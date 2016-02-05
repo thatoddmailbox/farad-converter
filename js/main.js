@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("#num".change(function() {
+	$("#num").change(function() {
 		var inVal = $("#num").val();
 		var faradVal = 0;
 		var inUnits = $("#in-units").val();
