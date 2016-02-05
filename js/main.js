@@ -4,13 +4,13 @@ $(document).ready(function() {
 		var faradVal = 0;
 		var inUnits = $("#in-units").val();
 		if (inUnits == "f") {
-			faradVal = inVal;
+			faradVal = inVal * 1;
 		} else if (inUnits == "u") {
-			faradVal = inVal * 100;
+			faradVal = inVal / 1000000;
 		} else if (inUnits == "n") {
-			faradVal = inVal * 10000;
+			faradVal = inVal / 100000000;
 		} else if (inUnits == "p") {
-			faradVal = inVal * 1000000;
+			faradVal = inVal / 10000000000;
 		}
 		console.log(faradVal);
 	});
