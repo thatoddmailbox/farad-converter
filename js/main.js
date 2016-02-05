@@ -16,11 +16,11 @@ $(document).ready(function() {
 		var output = "";
 			output += faradVal;
 			output += " farad<br />";
-			output += faradVal;
+			output += (faradVal * 1000000);
 			output += " microFarad (uF)<br />";
-			output += faradVal;
+			output += (faradVal * 1000000000);
 			output += " nanoFarad (nF)<br />";
-			output += faradVal;
+			output += (faradVal * 1000000000000);
 			output += " picoFarad (pF)<br />";
 		$("#result").html(output);
 	});
