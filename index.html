@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>farad-converter</title>
+
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<p>Convert from:</p>
+		<input type="number" id="num" placeholder="Value" />
+		<select id="in-units">
+			<option value="f">farad</option>
+			<option value="u">microFarad (uF)</option>
+			<option value="n">nanoFarad (nF)</option>
+			<option value="p">picoFarad (pF)</option>
+		</select>
+		<br />
+		<p>Result:</p>
+		<p id="result"></p>
+	</body>
+</html>
