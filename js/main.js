@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	var convert = function() {
-		var inVal = $("#num").val();
+		var inVal = new Big($("#num").val());
 		var faradVal = new Big(0);
-		var inUnits = new Big($("#in-units").val());
+		var inUnits = $("#in-units").val();
 		if (inUnits == "f") {
 			faradVal = inVal;
 		} else if (inUnits == "u") {
