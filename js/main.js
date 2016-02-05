@@ -8,9 +8,9 @@ $(document).ready(function() {
 		} else if (inUnits == "u") {
 			faradVal = inVal / 1000000;
 		} else if (inUnits == "n") {
-			faradVal = inVal / 100000000;
+			faradVal = inVal / 1000000000;
 		} else if (inUnits == "p") {
-			faradVal = inVal / 10000000000;
+			faradVal = inVal / 1000000000000;
 		}
 		console.log(faradVal);
 	});
